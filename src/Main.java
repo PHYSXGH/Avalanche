@@ -7,7 +7,8 @@ public class Main {
         System.out.println("Begin tests");
 
         // tests for the general questions
-        System.out.println(GeneralTest.fibonacciNumbers(5));
+        System.out.println(GeneralTest.fibonacciNumbers(100));
+        System.out.println(GeneralTest.fibonacciNumbersRecursive(100));
         sortedArrayTest();
         System.out.println(GeneralTest.noOddDigits(0));
         System.out.println(GeneralTest.returnSum(9));
@@ -15,6 +16,10 @@ public class Main {
         // test for the balanced brackets
         System.out.println(GeneralTest.balancedBrackets("{[(())]()}"));
         System.out.println(GeneralTest.balancedBrackets("{{}}[[){[[]]()(){}}}"));
+
+        // test for the balanced brackets using the stack
+        System.out.println(GeneralTest.balancedBracketsStack("{[(())]()}"));
+        System.out.println(GeneralTest.balancedBracketsStack("{{}}[[){[[]]()(){}}}"));
 
         // test for the linked lists
         linkedListTest();
